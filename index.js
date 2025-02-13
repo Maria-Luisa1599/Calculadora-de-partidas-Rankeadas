@@ -1,4 +1,4 @@
-var playerWins = 15, playerLosses = 6
+var playerWins =100, playerLosses = 6
 // let calcResult = rankedCalculator(9, 5)
 
 function rankedCalculator(playerWins, playerLosses){
@@ -10,7 +10,7 @@ console.log(`O saldo de Rankeadas é de: ${saldoVitorias}`)
 
 let nivel
 
-if (saldoVitorias < 10){
+if (saldoVitorias <= 10){
     nivel = "FERRO"
     console.log(`O Herói tem ${playerWins} vitórias e está no nível de ${nivel}`)  
 }else if (playerWins >= 11 && playerWins < 21){
@@ -28,7 +28,7 @@ if (saldoVitorias < 10){
 }else if (playerWins >= 91 && playerWins < 100){
     nivel = "LENDÁRIO"
     console.log(`O Herói tem ${playerWins} vitórias e está no nível de ${nivel}`)  
-}else if (playerWins >= 101){
+}else{
     nivel = "IMORTAL"
     console.log(`O Herói  tem de saldo de ${playerWins} vitórias e está no nível de ${nivel}`)  
 }
